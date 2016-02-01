@@ -1,0 +1,24 @@
+{
+  "name": "nextleap",
+  "description": "nextleap www site",
+  "main": "index.js",
+  "authors": [
+    "Yves-Marie Haussonne <ymh.work+github@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "es6"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "^5.5.3"
+  }
+}
