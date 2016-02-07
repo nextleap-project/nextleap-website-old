@@ -51,6 +51,12 @@ configure :development do
   activate :livereload
 end
 
+activate :deploy do |deploy|
+    app.data.site.deploy.each do |k, v|
+        deploy[k.to_sym] = v
+    end
+end
+
 ###
 # Helpers
 ###
