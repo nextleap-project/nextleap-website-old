@@ -20,3 +20,4 @@ src/.cache
 src/node_modules
 src/bower_components
 src/data/site.yaml
+src/tmp

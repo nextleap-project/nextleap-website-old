@@ -8,20 +8,19 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Project NextLeap" %></title>
 
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href='' rel='stylesheet' type='text/css'>
 
     <%= stylesheet_link_tag :screen, :media=>"screen, projection"%>
     <%= stylesheet_link_tag :print, :media=>"print"%>
     <!--[if IE]>
     <%= stylesheet_link_tag :ie, :media=>"screen, projection" %>
     <![endif]-->
-    <%= javascript_include_tag :modernizr %>
-    <%= javascript_include_tag :all %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial "partial/header" %>
+    <%= partial "partials/header" %>
     <%= yield %>
-    <%= partial "partial/footer" %>
+    <%= partial "partials/footer" %>
+    <%= javascript_include_tag :all %>
   </body>
 </html>

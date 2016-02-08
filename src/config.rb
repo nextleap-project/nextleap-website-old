@@ -1,7 +1,7 @@
 # Compass configuration
 compass_config do |config|
   # Require any additional compass plugins here.
-  config.add_import_path "../bower_components/foundation/scss"
+  config.add_import_path "../bower_components/foundation-sites/scss"
   config.output_style = :compact
   config.http_path = "/"
   config.css_dir = "stylesheets"
@@ -13,7 +13,7 @@ compass_config do |config|
   # output_style = :expanded or :nested or :compact or :compressed
 
   # To enable relative paths to assets via compass helper functions. Uncomment:
-  relative_assets = true
+  config.relative_assets = true
 
   # To disable debugging comments that display the original location of your selectors. Uncomment:
   # line_comments = false
@@ -32,6 +32,8 @@ end
 ###
 ignore "bower_components/**/*"
 
+set :relative_links, true
+
 # Per-page layout changes:
 #
 # With no layout
@@ -49,6 +51,12 @@ page '/*.txt', layout: false
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+end
+
+activate :middleman_simple_thumbnailer
+
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3']
 end
 
 activate :deploy do |deploy|

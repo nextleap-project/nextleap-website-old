@@ -1,3 +1,5 @@
 // This is where it all goes :)
 //= require jquery/dist/jquery
-//= require foundation/js/foundation.min
+//= require foundation-sites/dist/foundation.min
+
+$(document).foundation();
