@@ -57,6 +57,7 @@ activate :blog do |blog|
     blog.name = "events"
     blog.prefix = "events"
     blog.layout = "layout_events"
+    blog.publish_future_dated = true
 end
 
 activate :middleman_simple_thumbnailer
