@@ -20,7 +20,9 @@
   <body class="<%= page_classes %>">
     <%= partial "partials/header" %>
     <%= yield %>
+    <% unless current_page.data.no_footer %>
     <%= partial "partials/footer" %>
+    <% end %>
     <%= javascript_include_tag :all %>
   </body>
 </html>

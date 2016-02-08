@@ -1,0 +1,67 @@
+---
+title: Project NextLeap - Events
+---
+
+<div class="row column">
+    <h2>Events</h2>
+</div>
+<hr>
+<div class="row" id="content">
+    <div class="medium-8 columns">
+      <% blog('events').articles.each do |event| %>
+        <div class="blog-post">
+            <h3><%= event.title %>
+                <small><%= event.date.strftime('%d/%m/%Y') %></small>
+            </h3>
+            <%= image_tag event.data.image || "http://placehold.it/850x350", :class => 'thumbnail' %>
+            <p><%= strip_tags(event.summary(250)) %><%= link_to '>>', event %></p>
+            <div class="callout">
+              <ul class="menu simple">
+                <% event.tags.each do |tag| %>
+                  <li><%= tag %></li>
+                <% end %>
+              </ul>
+            </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="medium-3 columns" data-sticky-container>
+        <div class="sticky" data-sticky data-anchor="content">
+            <h4>Categories</h4>
+            <ul>
+              <% blog('events').tags.each do |tag| %>
+                <li>
+                    <a href="#"><%= tag[0] %></a>
+                </li>
+              <% end %>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row column">
+    <ul class="pagination" role="navigation" aria-label="Pagination">
+        <li class="disabled">Previous</li>
+        <li class="current">
+            <span class="show-for-sr">You're on page</span>
+            1</li>
+        <li>
+            <a href="#" aria-label="Page 2">2</a>
+        </li>
+        <li>
+            <a href="#" aria-label="Page 3">3</a>
+        </li>
+        <li>
+            <a href="#" aria-label="Page 4">4</a>
+        </li>
+        <li class="ellipsis"></li>
+        <li>
+            <a href="#" aria-label="Page 12">12</a>
+        </li>
+        <li>
+            <a href="#" aria-label="Page 13">13</a>
+        </li>
+        <li>
+            <a href="#" aria-label="Next page">Next</a>
+        </li>
+    </ul>
+</div>

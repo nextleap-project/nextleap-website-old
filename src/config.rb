@@ -53,6 +53,12 @@ configure :development do
   activate :livereload
 end
 
+activate :blog do |blog|
+    blog.name = "events"
+    blog.prefix = "events"
+    blog.layout = "layout_events"
+end
+
 activate :middleman_simple_thumbnailer
 
 activate :autoprefixer do |config|
