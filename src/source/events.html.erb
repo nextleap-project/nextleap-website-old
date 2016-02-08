@@ -13,7 +13,7 @@ title: Project NextLeap - Events
             <h3><%= event.title %>
                 <small><%= event.date.strftime('%d/%m/%Y') %></small>
             </h3>
-            <% link_to event do %><%= image_tag event.data.image || "http://placehold.it/850x350", :class => 'thumbnail' %><% end %>
+            <% link_to event do %><%= image_tag event.data.image || "https://placehold.it/850x350", :class => 'thumbnail' %><% end %>
             <p><%= strip_tags(event.summary(250)) %><%= link_to '>>', event %></p>
             <div class="callout">
               <ul class="menu simple">

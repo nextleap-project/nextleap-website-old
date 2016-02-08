@@ -8,7 +8,7 @@
   <h4 class="subheader"><%= current_article.date.strftime('%Y/%m/%d')%></h4>
 </div>
 <div class="row column">
-  <%= image_tag current_article.data.image || "http://placehold.it/850x350", :class => 'thumbnail' %>
+  <%= image_tag current_article.data.image || "https://placehold.it/850x350", :class => 'thumbnail' %>
   <p>
     <%= yield %>
   </p>
