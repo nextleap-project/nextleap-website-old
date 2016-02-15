@@ -82,7 +82,6 @@ Here is an non exhaustive list of the great projects thet this website uses:
   - [ImageMagick]: http://www.imagemagick.org
   - [nodejs]: https://nodejs.org/en/
 
-
 ## License
 
 The code of this website is under the GNU GPL v3 license.
