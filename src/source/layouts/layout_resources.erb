@@ -1,0 +1,17 @@
+<% wrap_layout :layout do %>
+<div class="row column">
+  <h2>Resource</h2>
+</div>
+<hr>
+<div class="row column">
+  <h3><%= current_page.data.title %></h3>
+</div>
+<div class="row column">
+  <p>
+    <%= yield %>
+  </p>
+</div>
+<div class="row column">
+  <p><%= link_to "Back to resources pages","/resources.html" %></p>
+</div>
+<% end %>

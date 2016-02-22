@@ -1,0 +1,140 @@
+---
+title: Project NextLeap - Enmi presentation
+---
+
+<div>
+ <div id="player_project_330760fc-a31f-11e5-8011-00145ea4a2be_embed" style="float:left; width:550;" class="iri_player_embed">
+</div>
+<script type="text/javascript" src="https://ldt.iri.centrepompidou.fr/static/site/ldt/metadataplayer/LdtPlayer-core.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == "undefined") {
+jQuery = IriSP.jQuery;
+}
+var metadatas = {metadata: {url: "https://ldt.iri.centrepompidou.fr/ldtplatform/ldt/cljson/id/330760fc-a31f-11e5-8011-00145ea4a2be"}};
+var metadata_key = "metadata";
+IriSP.libFiles.defaultDir = "https://ldt.iri.centrepompidou.fr/static/site/ldt/js/";
+IriSP.libFiles.locations.jwPlayerSWF = "https://ldt.iri.centrepompidou.fr/static/site/ldt/swf/player.swf";
+IriSP.libFiles.locations.recordMicSwf = "https://ldt.iri.centrepompidou.fr/static/site/ldt/swf/record_mic.swf";
+IriSP.libFiles.locations.zeroClipboardSwf = "https://ldt.iri.centrepompidou.fr/static/site/ldt/swf/ZeroClipboard10.swf";
+IriSP.libFiles.locations.cssjQueryUI = "https://ldt.iri.centrepompidou.fr/static/site/ldt/css/jq-css/themes/base/jquery-ui.css";
+IriSP.language = "fr-fr";
+
+IriSP.widgetsDir = "https://ldt.iri.centrepompidou.fr/static/site/ldt/metadataplayer";
+var _metadata = {
+url: metadatas[metadata_key].url,
+format: "ldt"
+};
+var _config = {
+  width: "550",
+  container: "player_project_330760fc-a31f-11e5-8011-00145ea4a2be_embed",
+  css: "https://ldt.iri.centrepompidou.fr/static/site/ldt/metadataplayer/LdtPlayer-core.css",
+  default_options: {
+    metadata: _metadata
+  },
+  widgets: [
+    {
+      type: "AutoPlayer",
+      default_type: "HtmlPlayer",
+      video: "https://media.iri.centrepompidou.fr/video/enmi/2015/enmi_2015_session_2_480p_2015-12-14.mp4",
+      streamer: function(_url) {
+        var _matches = _url.match(/^[^\/]+\/\/[^\/]+\/[^\/]+\//);
+        if (_matches) {
+          return _matches[0];
+        } else {
+          return _url;
+        }
+      },
+      url_transform: function(url) {
+        // Adaptation to jwplayer 6
+        if (url.substr(url.length - 4).toLowerCase()==='.flv'){
+          return url.replace('/ddc_player/video/','/ddc_player/flv:video/');
+        }
+        return url.replace('/ddc_player/video/','/ddc_player/mp4:video/');
+      },
+      height: 300,
+      autostart: true
+    },
+    {
+      type: "Slider"
+    },
+    {
+      type: "Controller"
+    },
+    {
+      type: "Mediafragment"
+    },
+    {
+      type: "Polemic",
+      annotation_type: ["tweet"],
+      defaultcolor: "#585858",
+      foundcolor: "#fc00ff",
+      default_version: "2",
+      max_elements: "50",
+      polemics : {
+          "1": [
+              {
+                  "name" : "OK",
+                  "keywords" : [ "++" ],
+                  "color" : "#1d973d"
+              },
+              {
+                  "name" : "KO",
+                  "keywords" : [ "--" ],
+                  "color" : "#ce0a15"
+              },
+              {
+                  "name" : "REF",
+                  "keywords" : [ "==" ],
+                  "color" : "#c5a62d"
+              },
+              {
+                  "name" : "Q",
+                  "keywords" : [ "?" ],
+                  "color" : "#036aae"
+              },
+          ],
+          "2": [
+              {
+                  "name" : "OK",
+                  "keywords" : [ "++" ],
+                  "color" : "#1d973d"
+              },
+              {
+                  "name" : "KO",
+                  "keywords" : [ "!!" ],
+                  "color" : "#ce0a15"
+              },
+              {
+                  "name" : "REF",
+                  "keywords" : [ "==" ],
+                  "color" : "#c5a62d"
+              },
+              {
+                  "name" : "Q",
+                  "keywords" : [ "?" ],
+                  "color" : "#036aae"
+              },
+          ],
+      }
+    },
+    {
+      type: "Sparkline",
+      lineColor: "#7492b4",
+      fillColor: "#aeaeb8"
+    },
+    {
+      type: "Segments",
+      annotation_type: ["chap","découpage"],
+    },
+    {
+      type: "Annotation",
+      start_minimized: true,
+      site_name : "Lignes de Temps",
+      annotation_type: ["chap","découpage"]
+    }
+  ]
+};
+
+_myPlayer = new IriSP.Metadataplayer(_config);
+</script>
+</div>
