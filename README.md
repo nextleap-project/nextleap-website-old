@@ -71,7 +71,7 @@ bundle exec middleman deploy [options]           # deploy the code on the server
 ## Credits
 
 We would not be able to setup this site without the help of Open Source software and its community.
-Here is an non exhaustive list of the great projects thet this website uses:
+Here is an non-exhaustive list of the great projects this website uses:
 
   - [middleman]: http://middlemanapp.org
   - [ruby]: http://ruby-lang.org
