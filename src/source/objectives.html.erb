@@ -8,91 +8,97 @@ title: Project NextLeap - Objectives
 <hr>
 
 <div class="row column">
+NEXTLEAP pursues three main objectives:
   <p>
     <ol>
-      <li>The creation of an integrated socio-technical science of decentralised and rights-preserving internet architecture that takes as foundational provable security, privacy by design, federated identity, anonymity, and decentralised governance based on a number of detailed sociological analyses of real-world case-studies.</li>
-      <li>A fundamental re-thinking of the ethical and philosophical foundations of the Internet ground  principles of collective intelligence, digital hermeneutics and  net rights to be published in book and online, with a series of workshops and seminars to attract diverse stake-holders to deploy the protocols.</li>
+      <li>The creation of a fundamental rights-preserving socio-technical science of decentralised internet architecture.</li>
+      <li>A fundamental re-thinking of the ethical and philosophical foundations of the Internet. </li>
       <li>The modular specification of decentralised protocols implemented as open-source software modules for
         <ol type='a'>
-          <li>federated identity with a privacy-preserving address-book</li>
-          <li>secure messaging for both synchronous (chat) and asynchronous (e-mail) messaging</li>
-          <li>privacy-preserving analytics based on private information retrieval.</li>
+          <li>Privacy-preserving contact lists and presence services supporting federated identity</li>
+          <li>Secure messaging services that hide metadata (e.g., who, when, how often, etc.)</li>
+          <li>Privacy-preserving analytics collection and computation.</li>
         </ol>
       </li>
     </ol>
   </p>
 </div>
 
+
 <div class="row column">
 
+
   <p class="text-justify">
-    There are many open technical questions NEXTLEAP will strive to answer.
-    For example, <strong>Can decentralisation help privacy and anonymity?</strong>
-    While intuitively many people claim that decentralisation helps privacy,
-    actually recent research shows that de-anonymisation and surveillance is
-    actually easier on decentralised networks.
-    <strong>How can we build scalable, high-performing, and secure decentralised
-    architectures based on verified protocols?</strong>
-    Decentralisation typically has impact on the performance of the system with
-    respect to centralised solution. Necessary security properties need to be
-    proven in many protocols, and then also hold as part of a larger
-    heterogeneous system.
-    This is often hard for users and developers to understand but automated
-    tools and proper modularisation of components can help.
-  </p>
-  <p class="text-justify">
-    The foundation of these technical questions is rooted in both philosophy
-    and real-world usage of the Internet (as can be studied via sociology and
-    STS-based approaches). It is answers to these questions that are crucial
-    for building succcessful protocols and systems. To take another example,
-    <strong>what motivations and values can be used to predict successful adoption of
+    The technical solutions developed by NEXTLEAP will be rooted in both philosophy
+    and real-world usage of the Internet. In this aspect the project partners will strive to answer the following questions: 
+    <ul>
+    <li><strong>what motivations and values can be used to predict successful adoption of
     decentralised systems by communities of users?</strong> While it appears users are
     often unhappy with losing control of their data to companies that own
     centralised platforms, very few users do move to alternatives and what
-    precisely the social success or failure of a system is unclear.
-    <strong>Is there a decentralised philosophy at the core of the Internet that makes
+    precisely the social success or failure of a system is unclear.</li>
+    <li><strong>Is there a decentralised philosophy at the core of the Internet that makes
     sense of the success of existing protocols?</strong> It is claimed that values
     around collective intelligence, open innovation, privacy, and
     decentralisation are built into Internet protocols, but the precise
     philosophical grounding of these principles – and any new kinds of
-    “internet rights” they entail - is often vague. Furthermore, we need to
-    verify and determine if protocols have the properties needed to guarantee
-    these rights.
+    “internet rights” they entail - is often vague.</li>
+    </ul>
+    It is answers to these questions that are crucial for building succcessful protocols and systems that are adopted by citizens. The NEXTLEAP protocol will verify that the designed protocols have the properties required to guarantee
+    the rights and needs elicited from the answers to the above questions.
   </p>
+
   <p class="text-justify">
-    The core of modern Internet systems are based on a few protocols that can
-    be re-designed. An <strong>address-book</strong> (“friends”, social graph, contacts, etc.)
+    There main technical questions NEXTLEAP will strive to answer are the following:
+    <ul>
+    <li><strong>Can decentralisation help privacy and anonymity?</strong>
+    While intuitively many people claim that decentralisation helps privacy,
+    actually recent research shows that de-anonymisation and surveillance is
+    actually easier on decentralised networks.</li>
+    <li><strong>How can we build scalable, high-performing, and secure decentralised
+    architectures based on verified protocols?</strong>
+    Decentralisation typically has impact on the performance of the system with
+    respect to centralised solution. Necessary security properties need to be
+    proven in many protocols, and then also hold as part of a larger
+    heterogeneous system.</li>
+    </ul>
+    These aspects are hard to understand by users and developers. The modular components and automated analysis developed in NEXTLEAP will help building secure and privacy-preserving Internet services.
+  </p>
+
+  <p class="text-justify">
+    The three technical building blocks that NEXLEAP will output respond to the following questions:
+    <ul>
+    <li>An address-book (“friends”, social graph, contacts, etc.)
     is the fundamental building block for any messaging protocol. Such an
     addressbook can be based on a sharable identifier ranging from
     user@example.org to a hash of a public key (as used in Bitcoin).
     Currently, identities and their addressbooks that contain information such
     as public key material typically are centralised and, if decentralised, not
-    accessed in a privacy-preserving manner. Can we achieve a breakthrough to
+    accessed in a privacy-preserving manner. <strong> Can we achieve a breakthrough to
     allow users to keep track of their contacts without losing their rights or
-    becoming part of a centralised silo?
-  </p>
-  <p class="text-justify">
-    How can a person send <strong>secure messages</strong> to others, regardless of what system
-    they are using? These messages need to be end-to-end encrypted, resistant
+    becoming part of a centralised silo?</strong> </li>
+
+    <li><strong>How can a person send secure messages to others, regardless of what system
+    they are using?</strong> These messages need to be end-to-end encrypted, resistant
     to ‘metadata’ analysis, and may have a number of properties such as forward
     secrecy and future secrecy. While currently a number of secure next
     generation protocols exist such as Signal’s Axolotl are emerging,
     existing secure messaging systems are incompatible and so lead to silos
     between systems such as CryptoCat, Signal, and Telegram.
     Existing interoperable protocols like SMTP (e-mail) are by default
-    non-encrypted and leak metadata. Can we unify a protocol that starts with
-    e-mail and goes all the way to secure messaging?
-  </p>
+    non-encrypted and leak metadata. <strong>Can we unify a protocol that starts with
+    e-mail and goes all the way to secure messaging?</strong></li>
+
   <div>
     <%= image_tag 'nextleap_schema_silo.png', :class => 'float-center thumbnail', :id =>'nextleap_schema_silo' %>
   </div>
-  <p class="text-justify">
-    Lastly, much of the drive towards centralisation in Internet-based systems
+
+    <li>Lastly, much of the drive towards centralisation in Internet-based systems
     is also driven by practical needs to harness the collective ‘wisdom of the
     crowds’, improve their system, and to ‘know your user.’ However, even those
     that run the system are typically not interested in the personal data of
-    individual users, but only in answering questions about groups. Can we
-    create <strong>privacy-preserving analytics</strong> that can harness the power of
-    machine-learning for good while respecting the rights of their users?
+    individual users, but only in answering questions about groups. <strong>Can we
+    create privacy-preserving analytics that can harness the power of
+    machine-learning for good while respecting the rights of their users?</strong></li>
   </p>
 </div>
