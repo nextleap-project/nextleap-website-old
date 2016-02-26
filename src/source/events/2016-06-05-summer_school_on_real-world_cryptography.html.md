@@ -9,4 +9,4 @@ image: summer-school-850x350.png
 Carmela Troncoso (IMDEA Software)
 June 5-10th, Sibernik Croatia
 
-http://summerschool-croatia.cs.ru.nl/2016/
+[http://summerschool-croatia.cs.ru.nl/2016/](http://summerschool-croatia.cs.ru.nl/2016/)

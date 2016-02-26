@@ -9,4 +9,4 @@ image: http://netfutures2016.eu/wp-content/uploads/2016/02/savethedate.jpg
 "Sharing Economy" Panel with Harry Halpin (INRIA) and George Danezis (UCL):
 April 20th, Brussels
 
-http://netfutures2016.eu/
+[http://netfutures2016.eu/](http://netfutures2016.eu/)
