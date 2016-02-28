@@ -21,7 +21,7 @@ Follow the guidelines to install:
   - rbenv + ruby-build: https://github.com/rbenv/rbenv#homebrew-on-mac-os-x
   - bundler: http://bundler.io/
   - ImageMagick: http://brewformulas.org/Imagemagick (if you use Homebrew of course)
-  - node + rpm: https://nodejs.org/en/
+  - node + npm: https://nodejs.org/en/
 
 ### Linux
 
@@ -40,11 +40,11 @@ If you intend to deploy the website on the server (and if you have the proper cr
 
 ### Project Initialization
 
-All the project assets and dependency are downloaded with the following commands:
+All the project assets and dependencies are downloaded with the following commands:
 
 ```shell
 cd src
-rpm install
+npm install
 ./node_modules/.bin/bower install
 bundle install
 ```
