@@ -5,68 +5,72 @@ no_footer: true
 
 <div class="callout large">
   <div class="row column text-center nextleap-callout">
-  <h1>NextLeap</h1>
-  <p class="lead">NeXt generation Techno-social and Legal Encryption Access and Privacy</p>
+  <%= image_tag 'nextleap_logo.png', :resize_to => '400'%>
+    <%= image_tag 'texte_intro.png', :resize_to => '900'%>
   </div>
 </div>
 
 <div class="row">
-  <div class="medium-6 columns medium-push-6">
-    <%= image_tag 'nextleap_logo.png', :resize_to => '750x350', :class=> 'thumbnail' %>
-  </div>
-  <div class="medium-6 columns medium-pull-6">
-    <h2>About NEXTLEAP.</h2>
-    <p>In the wake of the Snowden revelations, public trust in the Internet has eroded.
-      <blockquote>
-        We need to encode our values not just in writing but in the structure of the Internet, and it's something that I invite everyone around the world, to join and participate in.
-        <cite>Edward Snowden</cite>
-      </blockquote>
-      The primary motivation of NEXTLEAP is to create, validate, and deploy <strong>communication and computation protocols</strong> that can serve as pillars for a secure, trust-worthy, annotable and privacy-respecting Internet that ensures citizens fundamental rights. For this purpose NEXTLEAP will develop an interdisciplinary <strong>internet science of decentralisation</strong> that provides the basis on which these protocols will be built.</p>
-  </div>
-</div>
 
-<div class="row column europe-flag">
-  <div class="medium-2 columns">
-    <%= image_tag 'eu-flag.jpg', :resize_to => '170' %>
+  <div class="medium-6 columns">
+    <h3>The NEXTLEAP Project</h3>
+    <p>In the wake of the Snowden revelations, public trust in the Internet has eroded.</p>
+      <p>The primary motivation of NEXTLEAP is to create, validate, and deploy communication and computation protocols that can serve as pillars for a secure, trust-worthy, annotable and privacy-respecting Internet that ensures citizens fundamental rights. For this purpose NEXTLEAP will develop an interdisciplinary internet science of decentralisation that provides the basis on which these protocols will be built.</p>
   </div>
-  <div class="medium-10 columns">
-    <p> This project has received funding from the European Union’s Horizon 2020 Framework Programme for Research and Innovation (H2020-ICT-2015, ICT-10-2015) under grant agreement nº 688722</p>
+  <div class="medium-6 columns">
+    <%= image_tag 'phototeam.jpg', :resize_to => '750x350', :class=> 'thumbnail' %>
+    </div>
   </div>
-</div>
+      <div class="row">
 
+        <div class="medium-6 columns">
+            <center><%= image_tag 'schema3.png', :resize_to => '250'%></center>
+        </div>
+            <div class="medium-6 columns">
+              <blockquote><p>"WE NEED TO ENCODE OUR VALUES NOT JUST IN WRITING BUT IN THE STRUCTURE OF THE INTERNET, AND IT'S SOMETHING THAT I INVITE EVERYONE AROUND THE WORLD, TO JOIN AND PARTICIPATE IN."</p><p>Edward Snowden</p></blockquote>
+
+        </div>
+      </div>
+<div class="row">
+  <hr>
+  <div class="medium-6 columns">
+      <%= image_tag 'eu-flag.jpg', :resize_to => '90' %>
+    <p><font size=-30%>This project has received funding from the European Union’s Horizon 2020 Framework Programme for Research and Innovation (H2020-ICT-2015, ICT-10-2015) under grant agreement nº 688722.</font size></p>
+  </div>
+  <div class="medium-6 columns">
+  <h5>Contact</h5>
+    <p class"lead"><font size=inherit>Coordinator: <%= link_to 'harry.halpin@inria.fr','mailto:harry.halpin@inria.fr' %></p>
+</div>
+</div>
 <hr>
 
 <div class="row column">
-  <h3>Partners and Contact</h3>
-</div>
-
-<div class="row column">
-  <p class"lead">Co-coordinator: <%= link_to 'harry.halpin@inria.fr','mailto:harry.halpin@inria.fr' %></p>
+  <h5>Partners</h5>
 </div>
 
 <div class="row institutions">
   <div class="medium-2 columns">
-    <h5><%= link_to 'INRIA', 'http://www.inria.fr', :target => '_blank', :title => 'INRIA' %></h5>
-    <%= image_tag 'INRIA.png', :resize_to => '170x170', :class => 'thumbnail' %>
+    <h5><%= link_to 'INRIA', 'http://www.inria.fr', :target => '_blank'%></h5>
+    <%= image_tag 'INRIA.png', :resize_to => '130', :class => 'thumbnail' %>
   </div>
   <div class="medium-2 columns">
-    <h5><%= link_to 'IMDEA Software', 'https://software.imdea.org', :target => '_blank', :title => 'IMDEA' %></h5>
-    <%= image_tag 'imdea-software.jpg', :resize_to => '170x170', :class => 'thumbnail' %>
+    <h5><%= link_to 'IMDEA Software', 'https://software.imdea.org', :target => '_blank'%></h5>
+    <%= image_tag 'imdea-software.jpg', :resize_to => '130', :class => 'thumbnail' %>
   </div>
   <div class="medium-2 columns">
-    <h5><%= link_to 'CNRS', 'http://www.cnrs.fr', :target => '_blank', :title => 'CNRS'%></h5>
-    <%= image_tag 'CNRS.jpg', :resize_to => '170x170', :class => 'thumbnail' %>
+    <h5><%= link_to 'CNRS', 'http://www.cnrs.fr', :target => '_blank'%></h5>
+    <%= image_tag 'CNRS.jpg', :resize_to => '130', :class => 'thumbnail' %>
   </div>
   <div class="medium-2 columns">
-    <h5><%= link_to 'IRI', 'http://www.iri.centrepompidou.fr', :target => '_blank', :title => 'Institut de Recherche et d\'Innovation'%></h5>
-    <%= image_tag 'IRI.png', :resize_to => '170x170', :class => 'thumbnail' %>
+    <h5><%= link_to 'IRI', 'http://www.iri.centrepompidou.fr', :target => '_blank'%></h5>
+    <%= image_tag 'IRI.png', :resize_to => '130', :class => 'thumbnail' %>
   </div>
   <div class="medium-2 columns">
-    <h5><%= link_to 'UCL', 'http://www.ucl.ac.uk', :target => '_blank', :title => 'University College London'%></h5>
-    <%= image_tag 'UCL.png', :resize_to => '170x170', :class => 'thumbnail' %>
+    <h5><%= link_to 'UCL', 'http://www.ucl.ac.uk', :target => '_blank'%></h5>
+    <%= image_tag 'UCL.png', :resize_to => '130', :class => 'thumbnail' %>
   </div>
   <div class="medium-2 columns">
-    <h5><%= link_to 'Merlinux', 'http://www.merlinux.de', :target => '_blank', :title => 'Merlinux' %></h5>
-    <%= image_tag 'merlinux.jpg', :resize_to => '170x170', :class => 'thumbnail' %>
+    <h5><%= link_to 'Merlinux', 'http://www.merlinux.de', :target => '_blank' %></h5>
+    <%= image_tag 'merlinux.jpg', :resize_to => '130', :class => 'thumbnail' %>
   </div>
 </div>
