@@ -31,17 +31,32 @@ no_footer: true
 
         </div>
       </div>
-<div class="row">
-  <hr>
-  <div class="medium-6 columns">
-      <%= image_tag 'eu-flag.jpg', :resize_to => '90' %>
-    <p><font size=-30%>This project has received funding from the European Union’s Horizon 2020 Framework Programme for Research and Innovation (H2020-ICT-2015, ICT-10-2015) under grant agreement nº 688722.</font size></p>
+<hr>
+<div class="row" id="content">
+    <div class="medium-4 columns">
+      <h3>Recent and future events</h3>
+      <% blog('events').articles[0,3].each do |event| %>
+        <div class="blog-post">
+            <h6><%= event.title %>
+                <small><%= event.date.strftime('%d/%m/%Y') %></small>
+            </h6>
+            <% link_to event do %><%= image_tag event.data.image || "https://placehold.it/145", :class => 'thumbnail thumbnail-home', :width => '145', :align=> 'left'%><% end %>
+            <p><%= strip_tags(event.summary(250)) %><%= link_to '>>', event %></p>
+        </div>
+      <% end %>
+    </div>
+    </div>
+  <div class="row">
+    <hr>
+    <div class="medium-6 columns">
+        <%= image_tag 'eu-flag.jpg', :resize_to => '90' %>
+      <p><font size=-30%>This project has received funding from the European Union’s Horizon 2020 Framework Programme for Research and Innovation (H2020-ICT-2015, ICT-10-2015) under grant agreement nº 688722.</font size></p>
+    </div>
+    <div class="medium-6 columns">
+    <h5>Contact</h5>
+      <p class"lead"><font size=inherit>Coordinator: <%= link_to 'harry.halpin@inria.fr','mailto:harry.halpin@inria.fr' %></p>
   </div>
-  <div class="medium-6 columns">
-  <h5>Contact</h5>
-    <p class"lead"><font size=inherit>Coordinator: <%= link_to 'harry.halpin@inria.fr','mailto:harry.halpin@inria.fr' %></p>
-</div>
-</div>
+  </div>
 <hr>
 
 <div class="row column">
