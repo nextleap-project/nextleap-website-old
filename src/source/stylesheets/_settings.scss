@@ -47,7 +47,7 @@
 $global-font-size: 90%;
 $global-width: rem-calc(1000);
 $global-lineheight: 1.3;
-$primary-color:#00ACDE;
+$primary-color:#63346E;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
@@ -118,7 +118,7 @@ $header-sizes: (
     'h6': 16,
   ),
 );
-$header-color: #FF6054;
+$header-color: #63346E;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
@@ -149,7 +149,7 @@ $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
-$blockquote-color: #00ACDE;
+$blockquote-color: #63346E;
 $blockquote-padding: rem-calc(3 20 0 19);
 $blockquote-border: Opx solid $medium-gray;
 $cite-font-size: rem-calc(13);
@@ -254,7 +254,7 @@ $buttongroup-expand-max: 6;
 // 13. Callout
 // -----------
 
-$callout-background: #00ACDE;
+$callout-background: #FFFFFF;
 $callout-background-fade: 0%;
 $callout-border: 1px solid rgba($black, 0.25);
 $callout-margin: 0 0 1rem 0;
