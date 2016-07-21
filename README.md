@@ -54,10 +54,10 @@ bundle install
 Here are the commands made available by middleman.
 
 ```shell
-bundle exec middleman build [options]            # Builds the static site for deployment
-bundle exec middleman help [COMMAND]             # Describe available commands or one specific command
-bundle exec middleman server [options]           # Start the preview server
-bundle exec middleman deploy [options]           # deploy the code on the server
+bundle exec middleman build --no-parallel [options] # Builds the static site for deployment. Beware the "--no-parallel" option is mandatory
+bundle exec middleman help [COMMAND]                # Describe available commands or one specific command
+bundle exec middleman server [options]              # Start the preview server
+bundle exec middleman deploy [options]              # deploy the code on the server
 ```
 
 ## Contributing

@@ -1,3 +1,5 @@
+activate :sprockets
+
 # Compass configuration
 compass_config do |config|
   # Require any additional compass plugins here.
@@ -91,4 +93,5 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript
+
 end
