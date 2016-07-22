@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/IRI-Research/middleman-simple-thumbnailer.git
-  revision: 216e50edc6996e6a26003f91a3de8e00287cc463
+  revision: 01dd4f8efa3b824cf0da6ec1b29c922b7185692e
   branch: support-middleman-v4.1
   specs:
     middleman-simple-thumbnailer (2.0.0)
