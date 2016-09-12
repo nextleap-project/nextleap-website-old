@@ -1,13 +1,4 @@
 GIT
-  remote: https://github.com/IRI-Research/middleman-simple-thumbnailer.git
-  revision: 01dd4f8efa3b824cf0da6ec1b29c922b7185692e
-  branch: support-middleman-v4.1
-  specs:
-    middleman-simple-thumbnailer (2.0.0)
-      middleman-core (~> 4)
-      mini_magick (~> 4)
-
-GIT
   remote: https://github.com/middleman-contrib/middleman-deploy.git
   revision: 243ab38b08896cd5a37d6845a01a5761b934a898
   specs:
@@ -119,6 +110,9 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
+    middleman-simple-thumbnailer (1.1.0)
+      middleman-core (~> 4)
+      mini_magick (~> 4)
     middleman-sprockets (4.0.0)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
@@ -170,11 +164,11 @@ DEPENDENCIES
   middleman-compass (>= 4.0.0)
   middleman-deploy (= 2.0.0.pre.alpha)!
   middleman-livereload
-  middleman-simple-thumbnailer (= 2.0.0)!
+  middleman-simple-thumbnailer (= 1.1.0)
   middleman-sprockets (>= 4.0.0.rc.1)
   nokogiri
   tzinfo-data
   wdm (~> 0.1.0)
 
 BUNDLED WITH
-   1.11.2
+   1.12.3
